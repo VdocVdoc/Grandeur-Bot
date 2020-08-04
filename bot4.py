@@ -1,10 +1,10 @@
-#C:\Users\vdocv\OneDrive\_GKG090717\GKG WORK STUFF\Coding_032420\Python Training\discordbot\
-
 import discord
 from discord.ext import commands
 import json
 import random
 
+
+TOKEN = "Your token"
 #class MyClient(discord.Client):
 client = discord.Client()
 
@@ -180,4 +180,4 @@ async def on_member_remove(member):
         to_send = 'Goodbye {0.mention} we hoped you enjoyed your stay :('.format(member, guild)
         await guild.system_channel.send(to_send)
 
-client.run('NzM4MTQzMjY5NTk4MjY1NDU2.XyHnfQ.UVYvHcrdWsoTcBjJlkOoWg2a62c')
+client.run(TOKEN)
